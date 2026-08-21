@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="DR TECKWORKS - Web, Digital, Design, Jan Seva assistance and Cyber Safety awareness services.">
+<title>DR TECKWORKS | Digital • Web • Jan Seva</title>
+<style>
+:root{--bg:#050b14;--panel:#0c1625;--panel2:#101d30;--gold:#f7b900;--white:#f8fafc;--muted:#aab6c8;--line:#263852;--green:#2ecc71}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--white);line-height:1.6}
+.container{width:min(1180px,92%);margin:auto}a{text-decoration:none;color:inherit}.top{background:#02060c;color:#b9c4d4;font-size:13px;padding:7px 0}.topin{display:flex;justify-content:space-between;gap:10px}
+nav{position:sticky;top:0;z-index:50;background:rgba(5,11,20,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:25px;font-weight:950;letter-spacing:.5px}.logo b{color:var(--gold)}.navlinks{display:flex;gap:21px;color:#d7dfeb;font-size:14px}.navlinks a:hover{color:var(--gold)}
+.btn{display:inline-block;padding:13px 19px;border-radius:10px;background:var(--gold);color:#111;font-weight:850;border:0;cursor:pointer}.btn.dark{background:transparent;border:1px solid #526681;color:white}
+.hero{padding:90px 0 75px;background:radial-gradient(circle at 78% 25%,rgba(247,185,0,.18),transparent 32%),radial-gradient(circle at 20% 75%,rgba(48,128,255,.12),transparent 30%)}
+.heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}.tag{display:inline-block;padding:6px 12px;border:1px solid #4a5c74;border-radius:99px;color:#dce4ef;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.02;margin-bottom:20px}h1 span,.gold{color:var(--gold)}.lead{font-size:18px;color:var(--muted);max-width:700px;margin-bottom:28px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+.visual{border:1px solid #334965;border-radius:24px;padding:20px;background:linear-gradient(145deg,#0d1b2d,#07101b);box-shadow:0 30px 90px #0007}.screen{min-height:350px;border-radius:18px;padding:28px;background:linear-gradient(135deg,#172b46,#08111e);display:flex;flex-direction:column;justify-content:center}.screen h2{font-size:36px}.screen .mini{color:var(--muted);margin-top:10px}
+section{padding:78px 0}.dark{background:#07111f}.head{text-align:center;margin-bottom:42px}.head h2{font-size:40px}.head p{color:var(--muted);margin-top:6px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}.stat{background:var(--panel);border:1px solid var(--line);padding:22px;border-radius:15px;text-align:center}.stat strong{font-size:28px;color:var(--gold);display:block}
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;transition:.2s}.card:hover{transform:translateY(-5px);border-color:#6b7f9b}.ico{font-size:32px;margin-bottom:12px}.card h3{font-size:18px;margin-bottom:7px}.card p{font-size:14px;color:var(--muted)}
+.note{margin-top:22px;padding:16px 18px;border-left:4px solid var(--gold);background:#0b1727;color:#cdd7e5;border-radius:8px;font-size:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px}.panel h3{font-size:24px;margin-bottom:13px}.list{list-style:none}.list li{margin:10px 0;color:#d6dfeb}.list li:before{content:"✓";color:var(--gold);font-weight:900;margin-right:10px}
+.process{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.step{text-align:center;background:var(--panel);border:1px solid var(--line);padding:19px;border-radius:14px}.step b{color:var(--gold);font-size:25px}.step p{font-size:13px;color:var(--muted)}
+.cta{border:1px solid #405674;border-radius:23px;padding:42px;text-align:center;background:linear-gradient(135deg,#102039,#0b1727)}.cta p{color:var(--muted);max-width:700px;margin:8px auto 20px}
+form{max-width:680px;margin:25px auto 0;display:grid;gap:12px;text-align:left}input,textarea,select{width:100%;padding:14px;background:#07111e;border:1px solid #334a67;border-radius:10px;color:white}textarea{min-height:110px}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);text-align:center}.small{font-size:12px;color:#8291a6;margin-top:8px}
+@media(max-width:950px){.heroGrid{grid-template-columns:1fr}.grid5{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(3,1fr)}.navlinks{display:none}}
+@media(max-width:560px){.topin{flex-direction:column}.grid5,.stats,.two{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}.hero{padding-top:60px}section{padding:58px 0}.cta{padding:27px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="container topin"><span>DR TECKWORKS • Digital Solutions & Service Assistance</span><span>Professional • Transparent • Client Focused</span></div></div>
+<nav><div class="container nav"><a class="logo" href="#">DR <b>TECKWORKS</b></a><div class="navlinks"><a href="#digital">Digital</a><a href="#janseva">Jan Seva</a><a href="#cyber">Cyber Safety</a><a href="#process">Process</a><a href="#contact">Contact</a></div><a class="btn" href="#contact">Enquiry</a></div></nav>
+
+<header class="hero"><div class="container heroGrid">
+<div><div class="tag">WEB • DIGITAL • DESIGN • SERVICE ASSISTANCE</div>
+<h1>आपका काम,<br><span>एक ही जगह।</span></h1>
+<p class="lead">DR TECKWORKS businesses, creators और आम नागरिकों के लिए website, digital services, documentation assistance और cyber-safety awareness solutions देता है.</p>
+<div class="actions"><a class="btn" href="#contact">अपना काम बताइए</a><a class="btn dark" href="#services">Services देखें</a></div>
+<div class="stats"><div class="stat"><strong>01</strong>Single Contact</div><div class="stat"><strong>Web</strong>Development</div><div class="stat"><strong>Digital</strong>Services</div><div class="stat"><strong>Support</strong>Guidance</div></div>
+</div>
+<div class="visual"><div class="screen"><div class="tag">DR TECKWORKS</div><h2>Digital presence से लेकर <span class="gold">service assistance</span> तक.</h2><p class="mini">Modern • Mobile Friendly • Easy to Understand</p></div></div>
+</div></header>
+
+<section id="services"><div class="container"><div class="head"><h2>हम क्या <span class="gold">करते हैं?</span></h2><p>आपके business और daily digital needs के लिए अलग-अलग services.</p></div>
+<div class="grid5">
+<div class="card" id="digital"><div class="ico">💻</div><h3>Website Development</h3><p>Business websites, landing pages, portfolios, forms और responsive web design.</p></div>
+<div class="card"><div class="ico">🎬</div><h3>Video Editing</h3><p>Reels, Shorts, YouTube videos, captions, transitions और social content.</p></div>
+<div class="card"><div class="ico">🎨</div><h3>Graphic Design</h3><p>Posters, banners, thumbnails, social posts और basic branding creatives.</p></div>
+<div class="card"><div class="ico">📱</div><h3>Social Media</h3><p>Content planning, post creation, captions और page-management assistance.</p></div>
+<div class="card"><div class="ico">📈</div><h3>Digital Marketing</h3><p>SEO basics, local visibility, lead-generation strategy और digital growth support.</p></div>
+</div></div></section>
+
+<section id="janseva" class="dark"><div class="container"><div class="head"><h2>Jan Seva & <span class="gold">Digital Assistance</span></h2><p>जहाँ उपलब्ध/अधिकृत हो, वहाँ online application और documentation में सहायता.</p></div>
+<div class="grid5">
+<div class="card"><div class="ico">🪪</div><h3>Aadhaar Assistance</h3><p>Available services, appointment/process guidance और document checklist assistance.</p></div>
+<div class="card"><div class="ico">💳</div><h3>PAN Assistance</h3><p>PAN application/correction process के लिए guidance और form assistance.</p></div>
+<div class="card"><div class="ico">🧾</div><h3>PF Assistance</h3><p>EPFO-related online process, claim guidance और document support.</p></div>
+<div class="card"><div class="ico">🍚</div><h3>Ration Card Guidance</h3><p>State portal process, documents और application guidance.</p></div>
+<div class="card"><div class="ico">📄</div><h3>Other Online Services</h3><p>Forms, applications, downloads, print/scan और digital process assistance.</p></div>
+</div>
+<div class="note">महत्वपूर्ण: DR TECKWORKS सरकारी विभाग नहीं है। Aadhaar/PAN/PF आदि के लिए हम केवल उपलब्ध और अधिकृत प्रक्रियाओं में सहायता/guidance देते हैं; approval/issuance संबंधित सरकारी संस्था करती है.</div>
+</div></section>
+
+<section id="cyber"><div class="container"><div class="two">
+<div class="panel"><h3>🛡️ Cyber Crime Awareness</h3><ul class="list"><li>Online fraud awareness</li><li>OTP / UPI scam safety</li><li>Phishing & fake-link awareness</li><li>Social-media account safety</li><li>Strong password & 2FA guidance</li><li>Suspicious activity पर सही official channel तक पहुँचने की guidance</li></ul></div>
+<div class="panel"><h3>📋 Business & Citizen Support</h3><ul class="list"><li>Document checklist guidance</li><li>Online form filling assistance</li><li>Scan / print / digital document support</li><li>Website & business setup</li><li>Social media presence</li><li>Basic digital literacy support</li></ul></div>
+</div></div></section>
+
+<section id="process" class="dark"><div class="container"><div class="head"><h2>हमारा <span class="gold">Process</span></h2><p>Simple और transparent.</p></div><div class="process">
+<div class="step"><b>01</b><h3>पूछिए</h3><p>अपना काम बताइए.</p></div><div class="step"><b>02</b><h3>Check</h3><p>Eligibility/process देखें.</p></div><div class="step"><b>03</b><h3>Plan</h3><p>Solution तय करें.</p></div><div class="step"><b>04</b><h3>Work</h3><p>हम काम पूरा करें.</p></div><div class="step"><b>05</b><h3>Review</h3><p>Details verify करें.</p></div><div class="step"><b>06</b><h3>Support</h3><p>आगे की guidance.</p></div>
+</div></div></section>
+
+<section><div class="container"><div class="cta"><h2>अपना काम हमें बताइए</h2><p>Website चाहिए, digital service assistance चाहिए या cyber-safety guidance — नीचे enquiry भेजें.</p>
+<form onsubmit="sendWA(event)">
+<input id="name" required placeholder="आपका नाम"><input id="phone" required placeholder="Mobile number">
+<select id="service"><option>Website Development</option><option>Video Editing</option><option>Graphic Design</option><option>Social Media</option><option>Digital Marketing</option><option>Aadhaar Assistance</option><option>PAN Assistance</option><option>PF Assistance</option><option>Ration Card Guidance</option><option>Cyber Crime Awareness</option><option>Other</option></select>
+<textarea id="msg" placeholder="आपको किस काम में मदद चाहिए?"></textarea><button class="btn">WhatsApp पर Enquiry भेजें</button>
+</form></div></div></section>
+
+<footer id="contact"><div class="container"><b class="gold">DR TECKWORKS</b> • We Build • You Grow • We Assist<br><div class="small">यह website informational है. सरकारी सेवाओं के लिए संबंधित official authority/portal ही final approval और issuance करता है.</div></div></footer>
+<script>
+function sendWA(e){e.preventDefault();const number="919999999999";const n=document.getElementById("name").value,p=document.getElementById("phone").value,s=document.getElementById("service").value,m=document.getElementById("msg").value;const text=`Hello DR TECKWORKS!%0AName: ${encodeURIComponent(n)}%0AMobile: ${encodeURIComponent(p)}%0AService: ${encodeURIComponent(s)}%0ADetails: ${encodeURIComponent(m)}`;window.open("https://wa.me/"+number+"?text="+text,"_blank")}
+</script>
+</body></html>
